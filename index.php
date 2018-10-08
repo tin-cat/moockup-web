@@ -2,7 +2,79 @@
 
 	include "res/common.php";
 
-	// Build how to use
+	// Moockup demo
+	$content .= "
+		<div id=\"moockup\"></div>
+		<script>
+			$('#moockup').Moockup({
+				isFullScreen: false,
+				resBaseDir: 'moockup/res/',
+				setup: {
+					\"screens\": [
+						{
+							\"title\": \"Home\",
+							\"backgroundColor\": \"#fb0\",
+							\"mockups\": [
+								{
+									\"type\": \"MacDesktop\",
+									\"image\": \"moockup/images/home_desktop.jpg\"
+								}
+							]
+						},
+						{
+							\"title\": \"Project\",
+							\"backgroundColor\": \"#E01A4F\",
+							\"mockups\": [
+								{
+									\"type\": \"MacDesktop\",
+									\"image\": \"moockup/images/subsection_desktop.jpg\"
+								}
+							]
+						},
+						{
+							\"title\": \"Mobile\",
+							\"backgroundColor\": \"#53B3CB\",
+							\"mockups\": [
+								{
+									\"type\": \"iPhoneXPortrait\",
+									\"image\": \"moockup/images/home_mobile.jpg\",
+									\"notchBackgroundColor\": \"#fff\",
+									\"title\": \"Home\"
+								},
+								{
+									\"type\": \"iPhoneXPortrait\",
+									\"image\": \"moockup/images/subsection_mobile.jpg\",
+									\"notchBackgroundColor\": \"#fff\",
+									\"title\": \"Sub section\"
+								},
+								{
+									\"type\": \"iPhoneXPortrait\",
+									\"image\": \"moockup/images/another_section_mobile.jpg\",
+									\"notchBackgroundColor\": \"#333333\",
+									\"title\": \"Another section\"
+								}
+							]
+						},
+						{
+							\"title\": \"More\",
+							\"backgroundColor\": \"#F15946\",
+							\"mockups\": [
+								{
+									\"type\": \"Tablet\",
+									\"image\": \"moockup/images/subsection_desktop.jpg\"
+								},
+								{
+									\"type\": \"MacBook\",
+									\"image\": \"moockup/images/home_desktop.jpg\"
+								}
+							]
+						}
+					]
+				}
+			});
+		</script>
+	";
+
 	$content .= "
 		<div class=\"contentWrapper\"><div class=\"content\">
 			<a name=\"basicUsage\"></a>
@@ -360,6 +432,12 @@
 					<div class=\"default\">setup.json</div>
 				</li>
 				<li>
+					<a name=\"jQueryPluginOptionsResBaseDir\"></a>
+					<div class=\"name\">resBaseDir</div>
+					<div class=\"description\">The base directory where Moockup's own resources are located. Change it if you're calling Moockup from a directory different than its own.</div>
+					<div class=\"default\">res/</div>
+				</li>
+				<li>
 					<a name=\"jQueryPluginOptionsGapPercentage\"></a>
 					<div class=\"name\">gapPercentage</div>
 					<div class=\"description\">The gap in between mockups on the same screen, expressed as a percentage relative to the screen's width.</div>
@@ -416,7 +494,7 @@
 			<a name=\"additional_credits\"></a>
 			<h1>Additional credits</h1>
 			<p>The beautiful website <a href=\"https://stories.readymag.com/mollino\" target=\"external\">https://stories.readymag.com/mollino</a> by <a href=\"https://readymag.com\" target=\"external\">Readymag</a> has been used as an example mockup.</p>
-			<p>iMac vector image based on the work by <a href=\"https://vecteezy.com\" target=\"external\">Vecteezy.com</a></p>
+			<p>iMac vector image based on the work by <a href=\"https://vecçteezy.com\" target=\"external\">Vecteezy.com</a></p>
 			<p>iPhone X vector image based on the work by <a href=\"http://www.designbolts.com/2017/09/13/free-vector-apple-iphone-x-mockup-in-ai-eps\" target=\"external\">DesignBolts</a></p>
 		</div></div>
 	";
@@ -424,7 +502,7 @@
 	pattern([
 		"title" => "Moockup",
 		"header" => "Moockup",
-		"headerSubtitle" => "with <div class=\"love\"></div> by <a href=\"http://tin.cat\">tin.cat</a> · download on <a href=\"https://github.com/tin-cat/moockup\">Github</a> · see <a href=\"#examples\">examples</a>",
+		"headerSubtitle" => "with <div class=\"love\"></div> by <a href=\"http://tin.cat\">tin.cat</a> · download on <a href=\"https://github.com/tin-cat/moockup\">Github</a>",
 		"headerSubSubtitle" => "A web tool to present drafts, designs or mockups to your client professionally while keeping control of the way it's presented, bringing back the \"wow\" effect your work deserves.",
 		"footer" => "with <div class=\"love\"></div> by <a href=\"http://tin.cat\">tin.cat</a>",
 		"mosaic" => $mosaic,

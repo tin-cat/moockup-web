@@ -327,6 +327,11 @@ code .ellipsis {
 	font-size: 40pt;
 }
 
+#moockup {
+	width: 100%;
+	height: 50vh
+}
+
 .mosaic > .item.withImage.highRes:after {
 	position: absolute;
 	top: 10px;
