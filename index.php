@@ -424,7 +424,7 @@
 	pattern([
 		"title" => "Moockup",
 		"header" => "Moockup",
-		"headerSubtitle" => "with <div class=\"love\"></div> by <a href=\"http://tin.cat\">tin.cat</a> · download on <a href=\"https://github.com/tin-cat/jquery-mockup\">Github</a> · see <a href=\"#examples\">examples</a>",
+		"headerSubtitle" => "with <div class=\"love\"></div> by <a href=\"http://tin.cat\">tin.cat</a> · download on <a href=\"https://github.com/tin-cat/moockup\">Github</a> · see <a href=\"#examples\">examples</a>",
 		"headerSubSubtitle" => "A web tool to present drafts, designs or mockups to your client professionally while keeping control of the way it's presented, bringing back the \"wow\" effect your work deserves.",
 		"footer" => "with <div class=\"love\"></div> by <a href=\"http://tin.cat\">tin.cat</a>",
 		"mosaic" => $mosaic,

@@ -1,0 +1,3 @@
+[submodule "moockup"]
+	path = moockup
+	url = https://github.com/tin-cat/moockup.git
