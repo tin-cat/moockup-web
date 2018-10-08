@@ -21,7 +21,7 @@
 			<h1>How to create your Moockup</h1>
 			<ul class=\"fancy\">
 				<li>
-					Download <a href=\"https://github.com/tin-cat/moockup\">Moockup</a>, unzip it and rename the folder to your liking.
+					Download <a href=\"https://github.com/tin-cat/moockup\">Moockup</a> and unzip it.
 				</li>
 				<li>
 					Copy your mockup PNG or JPG files inside the <i>images</i> folder.
@@ -33,7 +33,7 @@
 					Preview your Moockup locally by opening the <i>index.html</i> file in your browser
 				</li>
 				<li>
-					Upload the entire folder to your server and it's ready to share! <i>(You can omit the examples folder)</i>
+					Upload the entire folder to your server and it's ready to share!
 				</li>
 			</ul>
 		</div></div>
@@ -47,10 +47,10 @@
 				The setup.json contains all the specs of your Moockup: Edit it to compose your Moockup, and preview it by opening the <i>index.html</i> locally in your browser.
 			</p>
 			<p>
-				If you're familiar with the JSON format, take a look at the provided setup.json file and you'll easily understand how it works. If you don't know what JSON is, don't worry, it's quite easy to understand and a fast way to create your Moockup.
+				If you're familiar with the JSON format, take a look at the provided <i>setup.json</i> file and you'll easily understand how it works. If you don't know what JSON is, don't worry, it's quite easy to learn and you'll be creating your Moockups in no time.
 			</p>
 			<p>
-				Now, some basics you should understand:
+				First, some basics you should understand:
 			</p>
 			<p><b>Your Moockup can be divided in multiple screens. The user can navigate between screens using the top menu:</b></p>
 
@@ -115,17 +115,17 @@
 			")."</code>
 
 			<p>
-				Pay special attention to colons: When you have multiple <span class=\"inlineCode\">{ &hellip; }</span> blocks, they must be separated by colons.
+				Pay special attention to commas: When you have multiple <span class=\"inlineCode\">{ &hellip; }</span> blocks, they must be separated by commas.
 			</p>
 
 			<p>
-				It would like this this:
+				It would like this:
 			</p>
 
 			[screenshot here]
 
 			<p>
-				See how we did it? Simply adding another <span class=\"inlineCode\">{ &hellip; }</span> block inside the <span class=\"inlineCode\">\"mockups\": [ &hellip; ]</span> section was enough. This time it's an <i>\"iPhoneXPortrait\"</i> type mockup, and the image is <i>\"images/mockup_mobile.jpg\"</i>. You can add more mockups to each screen, but more than 3 or 4 will look too crumpled.
+				See how we did it? Simply adding another <span class=\"inlineCode\">{ &hellip; }</span> block inside the <span class=\"inlineCode\">\"mockups\": [ &hellip; ]</span> block was enough. This time it's an <i>\"iPhoneXPortrait\"</i> type mockup, and the image is <i>\"images/mockup_mobile.jpg\"</i>. You can add more mockups to each screen, but more than 3 or 4 might look too crumpled.
 			</p>
 
 			<p>
@@ -211,14 +211,58 @@
 			")."</code>
 
 			<p>
+				Sometimes you might need to add a title to a mockup, just to give some context to the viewer. You can do so by adding the <i>\"title\"</i> item to the mockup block, like this:
+			</p>
+
+			<code class=\"isolated html\">".formatHtml("
+			{
+				\"screens\": [
+					{
+						\"title\": \"Home\",
+						\"backgroundColor\": \"#E01A4F\",
+						\"mockups\": [
+							{
+								\"type\": \"MacDesktop\",
+								\"image\": \"images/mockup.jpg\",
+								[b]\"title\": \"Home\"[/b]
+							},
+							{
+								\"type\": \"iPhoneXPortrait\",
+								\"image\": \"images/mockup_mobile.jpg\",
+								[b]\"title\": \"Sub section\"[/b]
+							}
+						]
+					},
+					{
+						\"title\": \"About us\",
+						\"backgroundColor\": \"#F15946\",
+						\"mockups\": [
+							{
+								\"type\": \"MacDesktop\",
+								\"image\": \"images/about_us.jpg\",
+								[b]\"title\": \"About us\"[/b]
+							}
+						]
+					}
+				]
+			}
+						")."</code>
+
+			<p>
+				This makes a little appear below your each mockup:
+			</p>
+
+			[screenshoot here]
+
+			<p>
 				There are some additional items you can add at the root level of the JSON structure to customize your Moockup, take a look a this example featuring all of them with self-explanatory names:
 			</p>
 
 			<code class=\"isolated html\">".formatHtml("
 {
 	[b]\"pageTitle\": \"The title of the page\",
-	\"headerTitle\": \"The title that appears on top of your Moockup\",
-	\"footer\": \"A footer that will appear at the bottom of your Moockup\",
+	\"headerTitle\": \"The message that appears on top of your Moockup\",
+	\"footer\": \"A footer message that will appear at the bottom of your Moockup\",
 	\"backgroundColor\": \"#E01A4F\",[/b]
 	\"screens\": [
 		{
@@ -234,6 +278,8 @@
 }
 			")."</code>
 
+			[screenshoot here]
+
 			<p>
 				That should give you tools enough to customize your Moockup in lots of different ways. Let's impress your clients the next time you present them your work!
 			</p>
@@ -246,7 +292,7 @@
 			<a name=\"advancedusage\"></a>
 			<h1>Advanced usage</h1>
 			<p>
-				Moockup has been prepared to be tremendously easy to setup for a fullscreen that's ready to share, but it can be used as a jQuery plugin to embed Moockups in other scenarios. For advanced users, here's how to use Moockup as a jQuery plugin in your project:
+				Moockup has been prepared to be extremely easy to setup for easy to share, fullscreen presentations, but it can be used as a jQuery plugin to embed Moockups in more complex scenarios. For advanced users, here's how to use Moockup as a jQuery plugin in your project:
 			</p>
 
 			<p>
@@ -254,24 +300,101 @@
 			</p>
 
 			<code class=\"isolated html\">".formatHtml("
-			{
-				[b]\"pageTitle\": \"The title of the page\",
-				\"headerTitle\": \"The title that appears on top of your Moockup\",
-				\"footer\": \"A footer that will appear at the bottom of your Moockup\",
-				\"backgroundColor\": \"#E01A4F\",[/b]
-				\"screens\": [
-					{
-						\"title\": \"Home\",
-						\"mockups\": [
-							{
-								\"type\": \"MacDesktop\",
-								\"image\": \"images/mockup.jpg\"
-							}
-						]
-					}
-				]
-			}
-						")."</code>
+<html>
+<head>
+	[b]<script src=\"https://code.jquery.com/jquery-3.3.1.min.js\" integrity=\"sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\" crossorigin=\"anonymous\"></script>
+	<script src=\"moockup.min.js\"></script>
+	<link rel=\"stylesheet\" type=\"text/css\" href=\"moockup.min.css\" />[/b]
+</head>
+<body>
+	...
+			")."</code>
+
+			<p>
+				Create an empty div in your HTML where you want your Moockup to appear. Assign it a unique id:
+			</p>
+
+			<code class=\"isolated html\">".formatHtml("
+<div id=\"moockup\"></div>
+			")."</code>
+
+			<p>
+				Call the Moockup jQuery plugin on your div:
+			</p>
+
+			<code class=\"isolated html\">".formatHtml("
+<script>
+	[b]$('#moockup').Moockup();[/b]
+</script>
+			")."</code>
+
+			<p>
+				This will create your Moockup, but it will still work like a regular Moockup by reading the file <i>setup.json</i>. The interesting part is that you can now pass some additional options to the Moockup jQuery plugin:
+			</p>
+
+		</div>
+
+		<hr>
+
+		<div class=\"contentWrapper\"><div class=\"content\">
+
+			<a name=\"jquery_plugin_advanced_options\"></a>
+			<h1>jQuery plugin advanced options</h1>
+			<ul class=\"options\">
+				<li>
+					<a name=\"jQueryPluginOptionsIsFullScreen\"></a>
+					<div class=\"name\">isFullScreen</div>
+					<div class=\"description\">If set to true, the Moockup will take the entire available screen. If left to false, the Moockup will take the size of the div it's been created.</div>
+					<div class=\"default\">false</div>
+				</li>
+				<li>
+					<a name=\"jQueryPluginOptionsSetup\"></a>
+					<div class=\"name\">setup</div>
+					<div class=\"description\">If specified, this setup options will be used instead of reading the setup file. A JSON object must be passed, just like in the file setup.json.</div>
+					<div class=\"default\">false</div>
+				</li>
+				<li>
+					<a name=\"jQueryPluginOptionsSetupFileName\"></a>
+					<div class=\"name\">setupFileName</div>
+					<div class=\"description\">The setup file name to read if no setup option is specified.</div>
+					<div class=\"default\">setup.json</div>
+				</li>
+				<li>
+					<a name=\"jQueryPluginOptionsGapPercentage\"></a>
+					<div class=\"name\">gapPercentage</div>
+					<div class=\"description\">The gap in between mockups on the same screen, expressed as a percentage relative to the screen's width.</div>
+					<div class=\"default\">5</div>
+				</li>
+			</ul>
+
+			<p>
+				For example:
+			</p>
+
+			<code class=\"isolated html\">".formatHtml("
+<script>
+	$('#moockup').Moockup({
+		[b]'gapPercentage': 10,
+		'setup': {
+			'headerTitle': 'My Moockup',
+			'backgroundColor': '#fff',
+			'screens': [
+				{
+					'title': 'Home',
+					'backgroundColor': '#E01A4F',
+					'mockups': [
+						{
+							'type': 'MacDesktop',
+							'image': 'images/mockup.png'
+						}
+					]
+				}
+			]
+		}[/b]
+	});
+</script>
+			")."</code>
+
 		</div>
 
 		<hr>
@@ -286,13 +409,23 @@
 				</li>
 			</ul>
 		</div></div>
+
+		<hr>
+
+		<div class=\"contentWrapper\"><div class=\"content\">
+			<a name=\"additional_credits\"></a>
+			<h1>Additional credits</h1>
+			<p>The beautiful website <a href=\"https://stories.readymag.com/mollino\" target=\"external\">https://stories.readymag.com/mollino</a> by <a href=\"https://readymag.com\" target=\"external\">Readymag</a> has been used as an example mockup.</p>
+			<p>iMac vector image based on the work by <a href=\"https://vecteezy.com\" target=\"external\">Vecteezy.com</a></p>
+			<p>iPhone X vector image based on the work by <a href=\"http://www.designbolts.com/2017/09/13/free-vector-apple-iphone-x-mockup-in-ai-eps\" target=\"external\">DesignBolts</a></p>
+		</div></div>
 	";
 
 	pattern([
 		"title" => "Moockup",
 		"header" => "Moockup",
 		"headerSubtitle" => "with <div class=\"love\"></div> by <a href=\"http://tin.cat\">tin.cat</a> · download on <a href=\"https://github.com/tin-cat/jquery-mockup\">Github</a> · see <a href=\"#examples\">examples</a>",
-		"headerSubSubtitle" => "A web tool by Tin.cat to present your drafts, designs or mockups to your client in a professional way while being in control of the way it's presented, and keeping the value and \"wow\" effect your work deserves.",
+		"headerSubSubtitle" => "A web tool to present drafts, designs or mockups to your client professionally while keeping control of the way it's presented, bringing back the \"wow\" effect your work deserves.",
 		"footer" => "with <div class=\"love\"></div> by <a href=\"http://tin.cat\">tin.cat</a>",
 		"mosaic" => $mosaic,
 		"content" => $content
