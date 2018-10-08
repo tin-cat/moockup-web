@@ -362,9 +362,9 @@
 
 		<div class=\"contentWrapper\"><div class=\"content\">
 			<a name=\"advancedusage\"></a>
-			<h1>Advanced usage</h1>
+			<h1>Advanced usage as a jQuery plugin</h1>
 			<p>
-				Moockup has been prepared to be extremely easy to setup for easy to share, fullscreen presentations, but it can be used as a jQuery plugin to embed Moockups in more complex scenarios. For advanced users, here's how to use Moockup as a jQuery plugin in your project:
+				Moockup has been prepared to be extremely easy to setup for easy to share, fullscreen presentations, but it can be used as a jQuery plugin to embed Moockups in more complex scenarios, like the example Moockup you can see at the top of this page. For advanced users, here's how to use Moockup as a jQuery plugin in your project:
 			</p>
 
 			<p>
@@ -442,6 +442,12 @@
 					<div class=\"name\">gapPercentage</div>
 					<div class=\"description\">The gap in between mockups on the same screen, expressed as a percentage relative to the screen's width.</div>
 					<div class=\"default\">5</div>
+				</li>
+				<li>
+					<a name=\"jQueryPluginOptionsIsCacheJson\"></a>
+					<div class=\"name\">isCacheJson</div>
+					<div class=\"description\">Whether to cache the setup file ajax query or not.</div>
+					<div class=\"default\">false</div>
 				</li>
 			</ul>
 
