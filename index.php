@@ -573,7 +573,7 @@
 			<a name=\"advancedusage\"></a>
 			<h1>Advanced usage as a jQuery plugin</h1>
 			<p>
-				Moockup has been prepared to be extremely easy to setup for easy to share, fullscreen presentations, but it can be used as a jQuery plugin to embed Moockups in more complex scenarios, like the example Moockup you can see at the top of this page. For advanced users, here's how to use Moockup as a jQuery plugin in your project:
+				Moockup has been prepared to be extremely easy to setup for easy to share, fullscreen presentations, but it can be used as a jQuery plugin to embed Moockups in more complex scenarios, like the example Moockup you can see throughout this site. For advanced users, here's how to use Moockup as a jQuery plugin in your project:
 			</p>
 
 			<p>
