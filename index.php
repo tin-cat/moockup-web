@@ -102,7 +102,7 @@
 				});
 			</script>
 
-			<p><b>Each screen can have more than one mockups:</b></p>
+			<p><b>Each screen can have more than one mockup:</b></p>
 
 			<div id=\"moockupCodeDemoMultipleMockups\" class=\"codeDemo\"></div>
 			<script>
@@ -135,7 +135,7 @@
 				});
 			</script>
 
-			<p><b>Each mockup in your screens can be of any of the different available types:</b></p>
+			<p><b>Each mockup can be of any of the following available types:</b></p>
 
 			<div id=\"moockupCodeDemoMultipleTypes\" class=\"codeDemo\"></div>
 			<script>
@@ -148,16 +148,24 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'res/moockup_images/home_desktop.jpg'
+										'image': 'res/moockup_images/home_desktop.jpg',
+										'title': 'MacDesktop'
 									},
 									{
 										'type': 'MacBook',
-										'image': 'res/moockup_images/home_desktop.jpg'
+										'image': 'res/moockup_images/home_desktop.jpg',
+										'title': 'MacBook'
 									},
 									{
 										'type': 'iPhoneXPortrait',
-										'image': 'res/moockup_images/another_section_mobile.jpg',
-										'notchBackgroundColor': '#333'
+										'image': 'res/moockup_images/home_mobile.jpg',
+										'notchBackgroundColor': '#fff',
+										'title': 'iPhoneXPortrait'
+									},
+									{
+										'type': 'Tablet',
+										'image': 'res/moockup_images/home_desktop.jpg',
+										'title': 'Tablet'
 									}
 								]
 							}
