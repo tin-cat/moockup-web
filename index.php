@@ -75,7 +75,7 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/home_desktop.jpg'
+										'image': 'res/moockup_images/home_desktop.jpg'
 									}
 								]
 							},
@@ -84,7 +84,7 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/subsection_desktop.jpg'
+										'image': 'res/moockup_images/subsection_desktop.jpg'
 									}
 								]
 							},
@@ -93,7 +93,7 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/home_desktop.jpg'
+										'image': 'res/moockup_images/home_desktop.jpg'
 									}
 								]
 							}
@@ -115,17 +115,17 @@
 								'mockups': [
 									{
 										'type': 'iPhoneXPortrait',
-										'image': 'moockup/images/home_mobile.jpg',
+										'image': 'res/moockup_images/home_mobile.jpg',
 										'notchBackgroundColor': '#fff'
 									},
 									{
 										'type': 'iPhoneXPortrait',
-										'image': 'moockup/images/subsection_mobile.jpg',
+										'image': 'res/moockup_images/subsection_mobile.jpg',
 										'notchBackgroundColor': '#fff'
 									},
 									{
 										'type': 'iPhoneXPortrait',
-										'image': 'moockup/images/another_section_mobile.jpg',
+										'image': 'res/moockup_images/another_section_mobile.jpg',
 										'notchBackgroundColor': '#333'
 									}
 								]
@@ -148,15 +148,15 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/home_desktop.jpg'
+										'image': 'res/moockup_images/home_desktop.jpg'
 									},
 									{
 										'type': 'MacBook',
-										'image': 'moockup/images/home_desktop.jpg'
+										'image': 'res/moockup_images/home_desktop.jpg'
 									},
 									{
 										'type': 'iPhoneXPortrait',
-										'image': 'moockup/images/another_section_mobile.jpg',
+										'image': 'res/moockup_images/another_section_mobile.jpg',
 										'notchBackgroundColor': '#333'
 									}
 								]
@@ -201,7 +201,7 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/home_desktop.jpg'
+										'image': 'res/moockup_images/home_desktop.jpg'
 									}
 								]
 							}
@@ -254,11 +254,11 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/home_desktop.jpg'
+										'image': 'res/moockup_images/home_desktop.jpg'
 									},
 									{
 										'type': 'iPhoneXPortrait',
-										'image': 'moockup/images/home_mobile.jpg',
+										'image': 'res/moockup_images/home_mobile.jpg',
 										'notchBackgroundColor': '#fff'
 									}
 								]
@@ -325,11 +325,11 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/home_desktop.jpg'
+										'image': 'res/moockup_images/home_desktop.jpg'
 									},
 									{
 										'type': 'iPhoneXPortrait',
-										'image': 'moockup/images/home_mobile.jpg',
+										'image': 'res/moockup_images/home_mobile.jpg',
 										'notchBackgroundColor': '#fff'
 									}
 								]
@@ -339,7 +339,7 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/subsection_desktop.jpg'
+										'image': 'res/moockup_images/subsection_desktop.jpg'
 									}
 								]
 							}
@@ -404,11 +404,11 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/home_desktop.jpg'
+										'image': 'res/moockup_images/home_desktop.jpg'
 									},
 									{
 										'type': 'iPhoneXPortrait',
-										'image': 'moockup/images/home_mobile.jpg',
+										'image': 'res/moockup_images/home_mobile.jpg',
 										'notchBackgroundColor': '#fff'
 									}
 								]
@@ -419,7 +419,7 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/subsection_desktop.jpg'
+										'image': 'res/moockup_images/subsection_desktop.jpg'
 									}
 								]
 							}
@@ -480,12 +480,12 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/home_desktop.jpg',
+										'image': 'res/moockup_images/home_desktop.jpg',
 										'title': 'Home'
 									},
 									{
 										'type': 'iPhoneXPortrait',
-										'image': 'moockup/images/home_mobile.jpg',
+										'image': 'res/moockup_images/home_mobile.jpg',
 										'notchBackgroundColor': '#fff',
 										'title': 'Sub section'
 									}
@@ -496,7 +496,7 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/subsection_desktop.jpg',
+										'image': 'res/moockup_images/subsection_desktop.jpg',
 										'title': 'About us'
 									}
 								]
@@ -544,7 +544,7 @@
 								'mockups': [
 									{
 										'type': 'MacDesktop',
-										'image': 'moockup/images/home_desktop.jpg'
+										'image': 'res/moockup_images/home_desktop.jpg'
 									}
 								]
 							}
