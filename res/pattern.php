@@ -5,7 +5,7 @@
 	<meta name="keywords" content="<?= $keywords ? $keywords : "mockup,draft,web,wireframe,client,present,presenter,tool,javascript" ?>" />
 	<meta name="distribution" CONTENT="global" />
 	<link rel="canonical" href="https://moockup.tin.cat" />
-	<link rel="stylesheet" type="text/css" href="res/css/main.css?v=7"/>
+	<link rel="stylesheet" type="text/css" href="res/css/main.css?v=8"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="moockup/moockup.min.css"/>
