@@ -1,0 +1,58 @@
+{
+    "screens": [
+        {
+            "title": "Home",
+            "mockups": [
+                {
+                    "type": "MacDesktop",
+                    "image": "moockup/images/home_desktop.jpg"
+                }
+            ]
+        },
+        {
+            "title": "Project",
+            "mockups": [
+                {
+                    "type": "MacDesktop",
+                    "image": "moockup/images/subsection_desktop.jpg"
+                }
+            ]
+        },
+        {
+            "title": "Mobile",
+            "mockups": [
+                {
+                    "type": "iPhoneXPortrait",
+                    "image": "moockup/images/home_mobile.jpg",
+                    "notchBackgroundColor": "#fff",
+                    "title": "Home"
+                },
+                {
+                    "type": "iPhoneXPortrait",
+                    "image": "moockup/images/subsection_mobile.jpg",
+                    "notchBackgroundColor": "#fff",
+                    "title": "Sub section"
+                },
+                {
+                    "type": "iPhoneXPortrait",
+                    "image": "moockup/images/another_section_mobile.jpg",
+                    "notchBackgroundColor": "#333",
+                    "title": "Another section"
+                }
+            ]
+        },
+        {
+            "title": "More",
+            "mockups": [
+                {
+                    "type": "Tablet",
+                    "image": "moockup/images/subsection_desktop.jpg"
+                },
+                {
+                    "type": "MacBook",
+                    "image": "moockup/images/home_desktop.jpg"
+                }
+            ]
+        }
+    ]
+}
